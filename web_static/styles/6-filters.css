@@ -41,6 +41,7 @@ section.filters h3 {
     margin: 0;
     margin-top: 17px;
     padding: 0;
+    padding-left: 30px;
 }
 
 section.filters .amenities{
@@ -51,10 +52,50 @@ section.filters .amenities{
     float: left;
 }
 
-h4{
+section.filters h4{
     margin: 0px;
     padding: 0px;
     font-weight: 400;
     font-size: 14px;
+    padding-left: 30px;
 }
 
+section.filters .popover {
+    display: none;
+    position: relative;
+    border: 1px solid #DDDDDD;
+    background-color: #FAFAFA;
+    border-radius: 4px;
+    margin-top: 7%;
+    z-index: 1;
+    padding-bottom: 10%;
+}
+
+section.filters.popover li h2 {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    padding-bottom: 5%;
+}
+
+.popover .pop_list {
+    padding: 0;
+    padding-left: 10%;
+    margin: 0;
+}
+
+section.filters.popover ul {
+    padding-top: 30px;
+}
+
+.amenities:hover >.popover {
+    display: block;
+}
+
+.locations:hover >.popover {
+    display: block;
+    margin-bottom: 50px;
+}
